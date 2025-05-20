@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* General Page Styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #3c5991, #2a2c31);
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Table Container */
+        .table-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow-x: auto;
+        }
+
+        /* Book Table */
+        #book-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        /* Table Rows */
+        #book-table tbody {
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Table Cells */
+        #book-table td {
+            padding: 12px 15px;
+            vertical-align: top;
+            text-align: left;
+        }
+
+        /* Images */
+        .book-image {
+            width: 100px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Book Title */
+        .book-title {
+            font-weight: 600;
+            font-size: 20px;
+            color: #333;
+        }
+
+        /* Price */
+        .book-price {
+            font-size: 16px;
+            font-weight: bold;
+            color: #2d9c4d;
+        }
+
+        /* Button */
+        .add-cart-btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-cart-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="table-container">
+        <table id="book-table">
+            <!-- Book Row Start -->
+            <tbody class="book-group">
+                <tr>
+                    <td rowspan="3"><img class="book-image" src="./CSE1.png" alt="CSE Book 1"></td>
+                    <td class="book-title">Data Structures using C & C++</td>
+                    <td rowspan="3" class="book-price">Rs 723</td>
+                    <td rowspan="3"><button class="add-cart-btn">Add to Cart</button></td>
+                </tr>
+                <tr>
+                    <td>Author: Yedidyah Langsam + 2</td>
+                </tr>
+                <tr>
+                    <td>Publisher: Pearson Education India</td>
+                </tr>
+            </tbody>
+            <!-- Repeat the above <tbody> block for each book -->
+            <tbody class="book-group">
+                <tr>
+                    <td rowspan="3"><img class="book-image" src="./CSE1.png" alt="CSE Book 1"></td>
+                    <td class="book-title">Data Structures using C & C++</td>
+                    <td rowspan="3" class="book-price">Rs 723</td>
+                    <td rowspan="3"><button class="add-cart-btn">Add to Cart</button></td>
+                </tr>
+                <tr>
+                    <td>Author: Yedidyah Langsam + 2</td>
+                </tr>
+                <tr>
+                    <td>Publisher: Pearson Education India</td>
+                </tr>
+            </tbody>
+            <tbody class="book-group">
+                <tr>
+                    <td rowspan="3"><img class="book-image" src="./CSE1.png" alt="CSE Book 1"></td>
+                    <td class="book-title">Data Structures using C & C++</td>
+                    <td rowspan="3" class="book-price">Rs 723</td>
+                    <td rowspan="3"><button class="add-cart-btn">Add to Cart</button></td>
+                </tr>
+                <tr>
+                    <td>Author: Yedidyah Langsam + 2</td>
+                </tr>
+                <tr>
+                    <td>Publisher: Pearson Education India</td>
+                </tr>
+            </tbody>
+            <tbody class="book-group">
+                <tr>
+                    <td rowspan="3"><img class="book-image" src="./CSE1.png" alt="CSE Book 1"></td>
+                    <td class="book-title">Data Structures using C & C++</td>
+                    <td rowspan="3" class="book-price">Rs 723</td>
+                    <td rowspan="3"><button class="add-cart-btn">Add to Cart</button></td>
+                </tr>
+                <tr>
+                    <td>Author: Yedidyah Langsam + 2</td>
+                </tr>
+                <tr>
+                    <td>Publisher: Pearson Education India</td>
+                </tr>
+            </tbody>
+            <!-- More <tbody> blocks for other identical books -->
+        </table>
+    </div>
+</body>
+
+</html>
